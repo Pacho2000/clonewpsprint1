@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <title>WhatsApp</title>
+</head>
+
+<body>
+<section id="section1">
+  <header class="header" id="header">
+    <div class="header__main">
+      <a href="#" ><img class="header__perfil"
+        src="https://th.bing.com/th/id/OIP.5LA2ekgF4hWpxP_-YsNnrAHaE8?pid=ImgDet&rs=1" alt="fotoPerfil"></a>
+      <div class="header__options">
+        <button>
+          <a href="pages/login.html">
+            <ion-icon class="material-icons header__icon" name="exit-outline"><i alt="¿Desea salir de su cuenta?">more_vert</i></ion-icon>
+          </a>
+      </button>
+      </div>
+    </div>
+  </header>
+    <section class="section-title" id="title">
+        <h2 class="title-chats">Todos los Chats</h2>
+        <div class="section-btn-search">
+            <div class="section-div-search">
+                <ion-icon class="icon" name="search-outline"></ion-icon>
+                <input class="input" classtype="text" placeholder="Buscar chat">
+            </div>
+        </div>
+    </section>
+
+  <main class="chats" id="chats">
+    <ul class="chats__list">
+      <li class="chats__item chat">
+        <img class="chat__photo" src="https://picsum.photos/120" alt="Profile">
+        <div class="chat__container">
+          <div class="chat__info">
+            <h2 class="chat__name">Valeria Montoya</h2>
+            <p class="chat__text">Ned: Yeah, I think I now what</p>
+          </div>
+          <div class="chat__extra chat__extra--active">
+            <div class="chat__time">11:48 AM</div>
+            <div class="chat__amount">3</div>
+          </div>
+        </div>
+      </li>
+      <li class="chats__item chat">
+        <img class="chat__photo" src="https://picsum.photos/127" alt="Profile">
+        <div class="chat__container">
+          <div class="chat__info">
+            <h2 class="chat__name">Roberto Familia</h2>
+            <p class="chat__text">Steve: Great, thanks!</p>
+          </div>
+          <div class="chat__extra chat__extra--active">
+            <div class="chat__time">11:45 AM</div>
+            <div class="chat__amount">1</div>
+          </div>
+        </div>
+      </li>
+      <li class="chats__item chat">
+        <img class="chat__photo" src="https://picsum.photos/128" alt="Profile">
+        <div class="chat__container">
+          <div class="chat__info">
+            <h2 class="chat__name">Ángela López</h2>
+            <p class="chat__text">
+              <i class="material-icons">photo_camera</i> &nbsp;
+              <span>Image</span>
+            </p>
+          </div>
+          <div class="chat__extra">
+            <div class="chat__time">YESTERDAY</div>
+            <div class="chat__amount"></div>
+          </div>
+        </div>
+      </li>
+      <li class="chats__item chat">
+        <img class="chat__photo" src="https://picsum.photos/121" alt="Profile">
+        <div class="chat__container">
+          <div class="chat__info">
+            <h2 class="chat__name">Jackson Gaviria</h2>
+            <p class="chat__text">
+              <i class="material-icons check check--active">done_all</i> &nbsp;
+              <i class="material-icons">mic</i> &nbsp;
+              <span>0:04</span>
+            </p>
+          </div>
+          <div class="chat__extra">
+            <div class="chat__time">FRIDAY</div>
+            <div class="chat__amount"></div>
+          </div>
+        </div>
+      </li>
+      <li class="chats__item chat">
+        <img class="chat__photo" src="https://picsum.photos/122" alt="Profile">
+        <div class="chat__container">
+          <div class="chat__info">
+            <h2 class="chat__name">Lunch Group</h2>
+            <p class="chat__text">
+              <span>You: Sounds good!</span>
+            </p>
+          </div>
+          <div class="chat__extra">
+            <div class="chat__time">FRIDAY</div>
+            <div class="chat__amount"></div>
+          </div>
+        </div>
+      </li>
+      <li class="chats__item chat">
+        <img class="chat__photo" src="https://picsum.photos/123" alt="Profile">
+        <div class="chat__container">
+          <div class="chat__info">
+            <h2 class="chat__name">Jane Pearson</h2>
+            <p class="chat__text">
+              <span>🔥💭</span>
+            </p>
+          </div>
+          <div class="chat__extra">
+            <div class="chat__time">FRIDAY</div>
+            <div class="chat__amount"></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </main>
+</section>
+
+<section class="section__chatbox ocultar" id="section2">
+  <header class="header2">
+    <ion-icon class="icon" id="icon1" name="arrow-back-outline"></ion-icon>
+    <img class="chat__photo" src="https://picsum.photos/120" alt="Profile">
+    <h2 class="chat__name">Valeria Montoya</h2>
+  </header>
+</section>
+
+  <script src="scripts/hide.js" type="module"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

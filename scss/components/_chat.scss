@@ -1,0 +1,68 @@
+.chat {
+  display: flex;
+  padding-right: 1rem;
+
+  &__photo {
+    padding: 1rem;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+  }
+
+  &__container {
+    padding: 1rem 0;
+    color: $gray;
+    flex: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px lighten($color: $gray, $amount: 40) solid;
+  }
+
+  &:last-child > &__container {
+    border-bottom: none;
+  }
+
+  &__name {
+    color: $black;
+    font-size: 1.2rem;
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+
+  &__text {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__extra {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &--active {
+      color: $green;
+    }
+  }
+
+  &__time {
+    font-size: 0.8rem;
+  }
+
+  &__extra--active > &__amount {
+    color: $white;
+    background-color: $green;
+    margin: 0.5rem 0;
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    text-align: center;
+  }
+}
+
+.check {
+  &--active {
+    color: $blue;
+  }
+}

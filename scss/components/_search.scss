@@ -1,0 +1,44 @@
+.section-title{
+  display: flex;
+  align-items: center;
+  flex-direction: column; //Se invierte, cuando cambiamos a column
+  align-items: start;
+  padding: 10px 10px;
+}
+#section1{
+  width: 100%;
+  height: 100vh;
+}
+@media (min-width: 768px){
+  #section1{
+    width: 25%;
+  }
+}
+.section-btn-search{
+  position: relative;
+  width: 85%;
+  height: 50px;
+  background: $tealDark;
+  align-items: center;
+  padding: 5px 30px;
+  .section-div-search{
+    width: 100%;
+    .input{
+      width: 83%;
+      outline: none;
+      border: none;
+      background: #fefffe;
+      padding: 6px;
+      height: 38px;
+      border-radius: 18px;
+      padding-left: 25px;
+    }
+    .icon{
+      position: absolute;
+      left: 35px;
+      top: 19px;
+      font-size: 1.2rem;
+    }
+  }
+}
+
