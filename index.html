@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
   <link rel="stylesheet" href="/css/main.css" />
-  <title>WhatsApp</title>
+  <title>Clón</title>
 </head>
 
 <body>
@@ -135,9 +135,38 @@
     <img class="chat__photo" src="https://picsum.photos/120" alt="Profile">
     <h2 class="chat__name">Valeria Montoya</h2>
   </header>
+  <main class="main2" id="main2">
+    <article class="main2__article">
+      <p class="mensajerecibido">Hola Marce, ¿cómo has estado?</p>
+    </article>
+    <article class="main2__article">
+      <p class="mensajerecibido">Gorda necesito ayuda... ¡Urgente!</p>
+    </article>
+    <article class="main2__article" id="soloenviados">
+      <p class="mensajeenviado">Hola Vale, bien ¿y tú?</p>
+    </article>
+  </main>
+  <footer class="footer2">
+    <div class="footer2__box">
+        <div class="footer2__mensaje">
+            <input class="footer2__input" id="icon2" type="text" placeholder="Escribe algo">
+            <ion-icon class="footer2__icon" id="sendIcon" name="send-outline"></ion-icon>
+        </div>
+     </div>
+  </footer>
 </section>
 
+<!--
+<section class="section__history ocultar" id="section3">
+  <header class="header2">
+    <ion-icon class="icon" id="icon1" name="arrow-back-outline"></ion-icon>
+    <img class="chat__photo" src="https://picsum.photos/120" alt="Profile">
+    <h2 class="chat__name">Roberto Familia</h2>
+  </header>
+</section>
+-->
   <script src="scripts/hide.js" type="module"></script>
+  <script src="scripts/main.js" type="module"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

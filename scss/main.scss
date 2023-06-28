@@ -4,10 +4,12 @@
 @import 'init';
 @import 'colors';
 @import 'components/header';
-@import 'components/nav';
 @import 'components/chats';
 @import 'components/chat';
 @import 'components/search';
 @import 'components/chatbox';
 @import 'compologin/login';
 @import 'compologin/user';
+@import 'compochats/header';
+@import 'compochats/messages';
+@import 'compochats/footer';

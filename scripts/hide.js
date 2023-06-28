@@ -2,7 +2,9 @@
 const chats = document.getElementById('chats');
 const section1 = document.getElementById('section1');
 const section2 = document.getElementById('section2');
+const sección3 = document.getElementById('section3');
 const icon1 = document.getElementById('icon1');
+const icon2 = document.getElementById('icon2');
 
 console.log(chats);
 
@@ -28,3 +30,4 @@ window.addEventListener('resize', () =>{
     }
     console.log(window.innerWidth);
 })
+

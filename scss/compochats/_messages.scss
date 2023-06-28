@@ -1,0 +1,31 @@
+.main2{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0rem;
+    height: 80%;
+    &__article{
+        width: auto;
+        padding: 10px 12px;
+        font-size: 0.9rem;
+        .mensajerecibido{
+            position: relative;
+            padding: 0.5rem;
+            width: 45%;
+            border-radius: 1.5rem;
+            border-color: gray;
+            border: solid;
+            margin: 0;
+        }
+        .mensajeenviado{
+            position: relative;
+            padding: 0.5rem;
+            width: 45%;
+            border-radius: 1.5rem;
+            border: solid;
+            margin: 0;
+            float: right; //Inicializa en la derecha
+        }
+    }
+}
