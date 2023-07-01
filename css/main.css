@@ -56,6 +56,7 @@ body {
 .chat {
   display: flex;
   padding-right: 1rem;
+  overflow-y: scroll;
 }
 .chat__photo {
   padding: 1rem;
@@ -109,6 +110,20 @@ body {
 
 .check--active {
   color: #34b7f1;
+}
+
+.chat::-webkit-scrollbar {
+  width: 5px;
+}
+
+.chat::-webkit-scrollbar-thumb {
+  background-color: #7b7b7b;
+  border-radius: 10px;
+}
+
+.chat::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
 
 .section-title {
@@ -167,6 +182,21 @@ body {
   z-index: 10000;
 }
 
+.menuLogin {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .menuLogin {
+    width: 30%;
+  }
+}
 .body__login {
   display: flex;
   align-items: center;
@@ -247,7 +277,9 @@ body {
   color: #fff;
   display: flex;
   margin: 0;
-  height: 12%;
+  height: 9%;
+  display: flex;
+  align-items: center;
 }
 #section2 .header2 .icon {
   padding: 32px 0;
@@ -255,8 +287,8 @@ body {
   color: #000;
 }
 #section2 .header2 .chat__photo {
-  height: 3rem;
-  width: 3rem;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 #section2 .header2 .chat__name {
   text-align: left;
@@ -270,6 +302,10 @@ body {
   margin: 0;
   padding: 1rem 0rem;
   height: 80%;
+  overflow-y: scroll;
+  background: url("https://descubrecomohacerlo.com/wp-content/uploads/2020/12/fondo-predeterminado-whatsapp.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .main2__article {
   width: auto;
@@ -277,52 +313,63 @@ body {
   font-size: 0.9rem;
 }
 .main2__article .mensajerecibido {
+  background: #fff;
   position: relative;
-  padding: 0.5rem;
+  padding: 10px 15px;
   width: 45%;
-  border-radius: 1.5rem;
+  border-radius: 0.8rem;
   border-color: gray;
-  border: solid;
   margin: 0;
 }
 .main2__article .mensajeenviado {
+  background: #fff;
   position: relative;
-  padding: 0.5rem;
+  padding: 10px 15px;
   width: 45%;
-  border-radius: 1.5rem;
-  border: solid;
+  border-radius: 0.8rem;
   margin: 0;
   float: right;
 }
 
+.main2::-webkit-scrollbar {
+  width: 5px;
+}
+
+.main2::-webkit-scrollbar-thumb {
+  background-color: #7b7b7b;
+  border-radius: 10px;
+}
+
+.main2::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
 .footer2 {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  height: 8%;
-  border: 3px solid;
+  height: 11%;
   border-radius: 13px;
   margin: 0;
-}
-.footer2__box {
-  padding: 10px 5px;
+  width: 100%;
+  padding: -5px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
 }
 .footer2__mensaje {
   text-align: center;
 }
 .footer2__input {
-  width: 83%;
+  flex-grow: 1;
   outline: none;
   border: none;
   background: #ece5dd;
-  padding: 6px;
-  height: 18px;
+  padding: 5px 10px;
+  height: 24px;
   border-radius: 18px;
-  padding-left: 20px;
-}
-.footer2__icon {
-  position: relative;
-  top: 2.2px;
-  left: 4px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,29 +1,30 @@
 .footer2{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    height: 8%;
-    border: 3px solid;
+    height: 11%;
     border-radius: 13px;
     margin: 0;
-    &__box{        
-        padding: 10px 5px;
-    }
+    width: 100%;
+    padding: -5px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    gap : 10px;
+
+   
     &__mensaje{
         text-align: center;
     }
     &__input{
-        width: 83%;
+        flex-grow: 1;
         outline: none;
         border: none;
         background: $chat;
-        padding: 6px;
-        height: 18px;
+        padding: 5px 10px;
+        height: 24px;
         border-radius: 18px;
-        padding-left: 20px;
+     
     }
-    &__icon{
-        position: relative;
-        top: 2.2px;
-        left: 4px;
-    }
+    
 }

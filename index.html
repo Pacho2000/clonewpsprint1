@@ -10,11 +10,24 @@
 </head>
 
 <body>
+
+  <section class="menuLogin ocultar" id="menuLogin">
+  <article class="menuLogin__header">
+    <icono></icono>
+    <h3>Perfil</h3>
+  </article>
+  <figure>
+    <img src="https://picsum.photos/120" alt="">
+  </figure>
+  <article>
+ <h4></h4>
+</article>
+
+  </section>
 <section id="section1">
   <header class="header" id="header">
     <div class="header__main">
-      <a href="#" ><img class="header__perfil"
-        src="https://th.bing.com/th/id/OIP.5LA2ekgF4hWpxP_-YsNnrAHaE8?pid=ImgDet&rs=1" alt="fotoPerfil"></a>
+      <img class="header__perfil" id="photomain"  src="https://th.bing.com/th/id/OIP.5LA2ekgF4hWpxP_-YsNnrAHaE8?pid=ImgDet&rs=1" alt="fotoPerfil">
       <div class="header__options">
         <button>
           <a href="pages/login.html">
@@ -147,12 +160,10 @@
     </article>
   </main>
   <footer class="footer2">
-    <div class="footer2__box">
-        <div class="footer2__mensaje">
+
             <input class="footer2__input" id="icon2" type="text" placeholder="Escribe algo">
             <ion-icon class="footer2__icon" id="sendIcon" name="send-outline"></ion-icon>
-        </div>
-     </div>
+
   </footer>
 </section>
 
@@ -165,7 +176,12 @@
   </header>
 </section>
 -->
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="scripts/hide.js" type="module"></script>
+  <script src="services/petition.js" type="module"></script>
+  <script src="services/data.js" type="module"></script>
   <script src="scripts/main.js" type="module"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   await setupChatbox();
 });
 
+
+
+
 /*
 setTimeout(() => {
     sessionStorage.clear();

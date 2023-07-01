@@ -5,27 +5,46 @@
     margin: 0;
     padding: 1rem 0rem;
     height: 80%;
+    //Para ponerle scroll a una seccion
+    overflow-y: scroll;
+    background: url("https://descubrecomohacerlo.com/wp-content/uploads/2020/12/fondo-predeterminado-whatsapp.jpg");
+    background-size: cover;
+    background-position: center;
     &__article{
         width: auto;
         padding: 10px 12px;
         font-size: 0.9rem;
         .mensajerecibido{
+            background: $white;
             position: relative;
-            padding: 0.5rem;
+            padding: 10px 15px;
             width: 45%;
-            border-radius: 1.5rem;
+            border-radius: 0.8rem;
             border-color: gray;
-            border: solid;
             margin: 0;
         }
         .mensajeenviado{
+            background: $white;
             position: relative;
-            padding: 0.5rem;
+            padding: 10px 15px;
             width: 45%;
-            border-radius: 1.5rem;
-            border: solid;
+            border-radius: 0.8rem;
             margin: 0;
             float: right; //Inicializa en la derecha
         }
     }
+}
+
+
+.main2::-webkit-scrollbar {
+  width: 5px;
+}
+
+.main2::-webkit-scrollbar-thumb {
+  background-color: $gray;
+  border-radius: 10px;
+}
+.main2::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }

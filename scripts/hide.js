@@ -5,8 +5,14 @@ const section2 = document.getElementById('section2');
 const sección3 = document.getElementById('section3');
 const icon1 = document.getElementById('icon1');
 const icon2 = document.getElementById('icon2');
+const menuLogin = document.getElementById("menuLogin");
+const photomain = document.getElementById("photomain");
 
-console.log(chats);
+//console.log(chats);
+
+photomain.addEventListener("click",() => {
+  menuLogin.classList.remove("ocultar")
+})
 
 chats.addEventListener('click', () =>{
     section1.classList.add('ocultar');

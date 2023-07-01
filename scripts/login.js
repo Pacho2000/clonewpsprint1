@@ -5,7 +5,6 @@ const password= document.getElementById('password')
 const button= document.getElementById('button')
 
 
-
 button.addEventListener('click',(e)=>{
     e.preventDefault()
     const data={
@@ -14,4 +13,13 @@ button.addEventListener('click',(e)=>{
     }
     console.log(data);
 })
+const validarUser = () => {
+    const user= userInput.value;
+    const password = passwordInput.value;
 
+
+    getUsr(user,password,urlUsuario);
+}
+const getUser = (user, password ) =>{
+    console.log(user,password);
+}
