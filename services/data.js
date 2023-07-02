@@ -1,11 +1,11 @@
-const URL_API = "https://datasprint1-production.up.railway.app/"
+const URL_API = "http://localhost:3000/"
 
 export const endpoints = {
-    urlUsuarios: `${URL_API}usuarios`,
+    urlUsuarios: `${URL_API}users`,
+    urlChats: `${URL_API}chats`
 }
 
-console.log(endpoints.urlUsuarios);
+//console.log(endpoints.urlUsuarios);
+//console.log(endpoints.urlChats);
 
 
-
-//?user=${input}&password=${input1}

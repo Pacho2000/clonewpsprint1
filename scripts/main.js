@@ -1,7 +1,9 @@
-import { setupChatbox } from './sendmessage.js';
+import { printChats, printChats2 } from './printchats.js';
+
 
 document.addEventListener('DOMContentLoaded', async () => {
-  await setupChatbox();
+  printChats();
+  printChats2();
 });
 
 
