@@ -1,4 +1,4 @@
-
+// URL de la API que deseas consultar
 import { setupChatbox } from "./sendmessage.js";
 
 let userdinamic = document.getElementById('header')
@@ -36,7 +36,6 @@ export const printChats = async () =>{
   const resp = await filteredChats;
   resp.forEach(chat => {
     chatdinamics.innerHTML += `
-    <ul class="chats__list">
       <li class="chats__item chat">
         <img class="chat__photo" src="${chat.img}" alt="Profile">
         <div class="chat__container">
