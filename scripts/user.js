@@ -11,29 +11,30 @@ export const getUser = async (user, password) => {
   }
 };
 
-
-/*
-export const addUser = async (user) => {
-  try {
-    const response = await axios.post(url, user);
-    console.log(response.data);
-    return response.data;
-  } catch (error) {
-    console.log(error);
-    throw new Error("Error al agregar el usuario");
-  }
-};
-
-// Ejemplo de uso
-const newUser = {
-  username: "NuevoUsuario",
-  password: "NuevoPassword",
-};
-
-try {
-  const addedUser = await addUser(newUser);
-  console.log("Usuario agregado:", addedUser);
-} catch (error) {
-  console.log(error.message);
-}
-*/
+export const filterChatsById = async (id) => {
+    try {
+      const response = await axios.get("http://localhost:3000/chats");
+      const chats = response.data;
+  
+      let filteredChats;
+  
+      switch (id) {
+        case 0:
+          filteredChats = chats.filter((chat) => chat.id >= 0 && chat.id <= 2);
+          break;
+        case 1:
+          filteredChats = chats.filter((chat) => chat.id === 3 || chat.id === 4);
+          break;
+        default:
+          filteredChats = [];
+          break;
+      }
+  
+      console.log(filteredChats);
+      return filteredChats;
+    } catch (error) {
+      console.log(error);
+      throw new Error("Error al filtrar los chats por ID");
+    }
+  };
+  

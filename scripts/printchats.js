@@ -1,21 +1,39 @@
-// URL de la API que deseas consultar
+
 import { setupChatbox } from "./sendmessage.js";
 
-
-const url = "http://localhost:3000/chats"
-
+let userdinamic = document.getElementById('header')
 let chatdinamics = document.getElementById('chats');
 let chatdinamics2 = document.getElementById('section2');
+const filteredChats = JSON.parse(sessionStorage.getItem('filteredChats'));
+const datauser = JSON.parse(sessionStorage.getItem('user'));
+console.log("Usuario datos:", datauser);
+console.log("Chats filtrados:", filteredChats);
 
-export const getChats = async () => {
-    const {data, status} = await axios.get(url)
-    if (status === 200) {
-        return data
-    }
-}
+
+export const printUser = async () => {
+  const resp = await datauser;
+
+  if (typeof resp === 'object') {
+    userdinamic.innerHTML += `
+      <div class="header__main">
+        <img class="header__perfil" id="photomain"  src="${resp.url}" alt="fotoPerfil">
+        <div class="header__options">
+          <button>
+            <a href="login.html">
+              <ion-icon class="material-icons header__icon" name="exit-outline"><i alt="¿Desea salir de su cuenta?">more_vert</i></ion-icon>
+            </a>
+          </button>
+        </div>
+      </div>
+    `;
+  } else {
+    // Manejar el caso cuando no hay un objeto iterable
+    console.log('No hay valores para mostrar');
+  }
+};
 
 export const printChats = async () =>{
-  const resp = await getChats();
+  const resp = await filteredChats;
   resp.forEach(chat => {
     chatdinamics.innerHTML += `
     <ul class="chats__list">
@@ -34,12 +52,11 @@ export const printChats = async () =>{
       </li>
     `;
   });
-  
 }
 
 
 export const printChats2 = async () =>{
-  const resp = await getChats();
+  const resp = await filteredChats;
   resp.forEach(chat => {
     chatdinamics2.innerHTML += `
       <header class="header2">

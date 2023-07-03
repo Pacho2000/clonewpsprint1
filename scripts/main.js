@@ -1,12 +1,11 @@
-import { printChats, printChats2 } from './printchats.js';
+import { printChats, printChats2, printUser } from './printchats.js';
 
 
 document.addEventListener('DOMContentLoaded', async () => {
+  printUser();
   printChats();
   printChats2();
 });
-
-
 
 
 /*
