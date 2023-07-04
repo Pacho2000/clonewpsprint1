@@ -7,15 +7,19 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
   <link rel="stylesheet" href="/css/main.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
+
 
   <title>Clón</title>
 </head>
 
 <body>
 
-  <section class="menuLogin" id="menuLogin">
+  <section class="menuLogin ocultar" id="menuLogin">
   <article class="menuLogin__header">
-    <icono></icono>
+    <ion-icon class="icon" id="iconPhoto" name="arrow-back-outline"></ion-icon>
     <h3>Perfil</h3>
   </article>
   <figure>
@@ -27,7 +31,7 @@
 </article>
 
   </section>
-<section class="section__chatbox2 ocultar" id="section1">
+<section class="section__chatbox2" id="section1">
   <header class="header" id="header">
     
   </header>
@@ -36,7 +40,7 @@
         <div class="section-btn-search">
             <div class="section-div-search">
                 <ion-icon class="icon" name="search-outline"></ion-icon>
-                <input class="input" classtype="text" placeholder="Buscar chat">
+                <input id="searchInput" class="input" classtype="text" placeholder="Buscar chat">
             </div>
         </div>
     </section>

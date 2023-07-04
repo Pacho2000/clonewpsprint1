@@ -43,8 +43,18 @@ button.addEventListener('click', async (e) => {
   try {
     const createdUser = await createUser(user);
     console.log("Usuario creado:", createdUser);
-    alert(`¡Usuario creado con éxito! Bienvenido: ${user.user}`);
-    window.location.href = 'login.html';
+
+    Swal.fire({
+      title: "¡Usuario creado con éxito!",
+      text: `Bienvenido: ${user.user}`,
+      icon: 'success',
+      timer: 3000, // Duración en milisegundos
+      timerProgressBar: true,
+      showConfirmButton: false
+    }).then(() => {
+      // Después de que se cierre la notificación, redirecciona a login.html
+      window.location.href = 'login.html';
+    });
     
   } catch (error) {
     console.error("Error al crear el usuario:", error);

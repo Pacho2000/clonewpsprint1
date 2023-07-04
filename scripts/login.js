@@ -22,8 +22,17 @@ button.addEventListener('click', async (e) => {
       sessionStorage.setItem('user', JSON.stringify(data));
       sessionStorage.setItem('filteredChats', JSON.stringify(filteredChats));
       // Redireccionar a index.html
-      window.location.href = 'index.html';
-      alert(`Bienvenido de nuevo: ${data.user}`);
+      // Reemplaza la línea alert(`Bienvenido de nuevo: ${data.user}`);
+      Swal.fire({
+        title: `Bienvenido de nuevo: ${data.user}`,
+        icon: 'success',
+        timer: 3000, // Duración en milisegundos
+        timerProgressBar: true,
+        showConfirmButton: false
+      }).then(() => {
+        // Después de que se cierre la notificación, redirecciona a index.html
+        window.location.href = 'index.html';
+      });
 
     } else {
       alert("No coinciden");

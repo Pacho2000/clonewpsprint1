@@ -1,5 +1,6 @@
 // URL de la API que deseas consultar
 import { setupChatbox } from "./sendmessage.js";
+import { hideEvents } from "./hide.js";
 
 let userdinamic = document.getElementById('header')
 let chatdinamics = document.getElementById('chats');
@@ -51,6 +52,7 @@ export const printChats = async () =>{
       </li>
     `;
   });
+  await hideEvents()
 }
 
 
@@ -80,7 +82,7 @@ export const printChats2 = async () =>{
     </footer>
     `;
   });
-
+  await hideEvents()
   await setupChatbox();
 }
 

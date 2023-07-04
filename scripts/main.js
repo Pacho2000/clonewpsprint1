@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   printUser();
   printChats();
   printChats2();
+
 });
 
 
